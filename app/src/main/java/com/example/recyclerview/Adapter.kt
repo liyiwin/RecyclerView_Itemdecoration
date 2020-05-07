@@ -43,4 +43,12 @@ class Adapter(var outerlist:MutableList<Int>,var context : Context):RecyclerView
 
     }
 
+    fun update (list:MutableList<Int>){
+
+        innerlist = list
+
+        notifyDataSetChanged()
+
+    }
+
 }
