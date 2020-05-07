@@ -32,6 +32,10 @@ class MainActivity : AppCompatActivity() {
 
         recyclerView.adapter = adapter
 
+        val dr = DividerItemDecoration()
+
+        recyclerView.addItemDecoration(dr)
+
     }
 
     fun setlist(list: MutableList<Int>){
