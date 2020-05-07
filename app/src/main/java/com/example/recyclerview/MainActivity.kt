@@ -22,6 +22,9 @@ class MainActivity : AppCompatActivity() {
 
        setUpRecyclerView(rv,adapter)
 
+       adapter.update(list)
+
+
     }
 
     fun setUpRecyclerView(recyclerView: RecyclerView,adapter: Adapter){
