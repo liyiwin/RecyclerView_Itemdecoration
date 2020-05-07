@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity() {
 
        adapter.update(list)
 
-
     }
 
     fun setUpRecyclerView(recyclerView: RecyclerView,adapter: Adapter){
