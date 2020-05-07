@@ -15,6 +15,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        setlist(list)
+
+
+
+    }
+
+    fun setlist(list: MutableList<Int>){
+
+        for(i in 1 .. 250)  list.add(i)
 
     }
 
