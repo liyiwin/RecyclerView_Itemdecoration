@@ -7,10 +7,10 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.itemview.view.*
 
-class Adapter(var outerlist:MutableList<String>,var context : Context):RecyclerView.Adapter<Adapter.ViewHolder>() {
+class Adapter(var outerlist:MutableList<Int>,var context : Context):RecyclerView.Adapter<Adapter.ViewHolder>() {
 
 
-    var innerlist = mutableListOf<String>()
+    var innerlist = mutableListOf<Int>()
 
     init {
 
@@ -33,7 +33,7 @@ class Adapter(var outerlist:MutableList<String>,var context : Context):RecyclerV
 
     override fun onBindViewHolder(holder: Adapter.ViewHolder, position: Int) {
 
-        holder.text.text = innerlist[position]
+        holder.text.text = innerlist[position].toString()
 
     }
 
